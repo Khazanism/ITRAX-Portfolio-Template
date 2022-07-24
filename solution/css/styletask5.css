@@ -1,0 +1,194 @@
+/*========== Public Style ==========*/
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+list-style: none;
+}
+
+
+nav{
+    position: relative;
+}
+
+.btn{
+color: white;
+background-color: aqua;
+padding: 1.25rem 2.5rem;
+border-color: aqua;
+border-radius: 0.25rem;
+display: inline-block;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.title {
+text-align: center;
+font-size: 1rem;
+}
+
+.title span{
+font-size: 1rem;
+color: yellow;
+font-weight: 700;
+text-transform: uppercase;
+}
+
+
+nav label{
+position: fixed;
+right: 1rem;
+top: 1rem;
+width: 3.125rem;
+height: 3.125rem;
+background-color: rgb(224, 156, 156);
+text-align: center;
+line-height: 3125rem;
+border-radius: 0.3rem;
+cursor: pointer;
+color: white;
+z-index: 9999;
+}
+
+nav aside{
+    position: fixed;
+    background-color: beige;
+    right: -100%;
+    height: 100vh;
+    width: 18vw;
+    z-index: 999;
+    transition: 2s;
+}
+
+
+/* when i check the check box bring me the aside and make the right 0 */
+
+nav #inpchek:checked + aside{
+    right: 0;
+} 
+
+nav aside .brand {
+font-size: 1.2rem;
+background-color: bisque;
+padding: 1.67rem 0.875rem;
+width: 100%;
+color: white;
+
+
+}
+
+nav aside .aside-list{
+    
+
+}
+
+
+nav aside .aside-list .item{
+padding: 1rem .6rem;
+}
+
+nav aside .aside-list .item a{
+  color: white;  
+} 
+
+nav aside .aside-list .item:hover{
+    background-color: rgba(255, 255, 255, 0.219);
+    
+    }
+/* header */
+
+header{
+    background-image: url(/images/bg-masthead.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    opacity: .9;
+    position: relative;
+    
+}
+
+header .content {
+    position: absolute;
+    /* background-color: aqua; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+header  .content h1{
+    font-size: 5.5rem;
+}
+header  .content p{
+    font-size: 1.75rem;
+    font-weight: 600;
+    font-style: italic;
+    margin-bottom: 1.3rem;
+    display: inline-block;
+}
+
+.next-project{
+    background-color: antiquewhite;
+    padding: 7.5rem 0;
+    text-align: center;
+
+
+}
+
+.next-project .content h4{
+font-size: 2rem;
+font-weight: 700;
+}
+
+.next-project .content p{
+    font-size: 1.25rem;
+    font-weight: 300;
+    color: grey;
+    margin-bottom: 3rem;
+
+    }
+
+    .next-project .content .btn{
+        background-color: black;
+    }
+
+.services {
+    background-color: aqua;
+    padding: 7.7rem 0;
+}
+
+.services .item-services{
+    width: 20%;
+    float: left;
+    margin: 2rem;
+    text-align: center;
+}
+
+.services .item-services .icon{
+    width: 7rem;
+    height: 7rem;
+    background-color: beige;
+    margin: 1rem auto;
+    text-align: center;
+    /* font-size: 2.25rem; */
+    line-height: 8.5rem;
+}
+
+.services .item-services .icon i{ 
+    font-size: 7rem;
+}
